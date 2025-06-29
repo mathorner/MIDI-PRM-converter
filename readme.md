@@ -32,7 +32,7 @@ Install the dependency:
 ```bash
 pip install mido
 
-## folder structure
+## Folder Structure
 
 project-folder/
 ├── batch_midi_to_t8_prm.py
