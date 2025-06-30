@@ -35,7 +35,7 @@ pip install mido
 ## Folder Structure
 
 project-folder/
-├── batch_midi_to_t8_prm.py
+├── midi_to_t8_prm.py
 ├── files/              # Put your .mid files here
 │   ├── pattern1.mid
 │   ├── pattern2.mid
@@ -44,7 +44,7 @@ project-folder/
 ## How to Use
 
 1.	Place all your .mid files in the files/ folder
-2.	Run the script: python3 batch_midi_to_t8_prm.py
+2.	Run the script: python3 midi_to_t8_prm.py
 3.	The script will generate up to 4 output folders:
 PTN_BANK01/
   ├── T8_RHYTHM_PTN01_01.PRM

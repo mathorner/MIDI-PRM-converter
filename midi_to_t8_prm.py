@@ -34,8 +34,12 @@ def convert_midi_to_prm(midi_path):
     if not note_events:
         return None  # Skip empty files
 
-    max_tick = max(tick for tick, _, _ in note_events)
-    ticks_per_step = max_tick / TOTAL_STEPS
+    # Get total ticks from all tracks
+    total_ticks = max(
+        sum(msg.time for msg in track)
+        for track in mid.tracks
+    )
+    ticks_per_step = total_ticks / TOTAL_STEPS
 
     steps = []
     for _ in range(TOTAL_STEPS):
