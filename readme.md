@@ -1,6 +1,6 @@
 # MIDI to Roland T-8 PRM Converter
 
-This Python script batch-converts Playbeat-style MIDI rhythm files into `.PRM` pattern files compatible with the Roland T-8 drum machine.
+This Python script batch-converts MIDI rhythm files into `.PRM` pattern files compatible with the Roland T-8 drum machine.
 
 Each `.mid` file is translated into a 32-step pattern file using a fixed voice mapping and exported into bank folders using the Roland T-8's naming convention.
 
